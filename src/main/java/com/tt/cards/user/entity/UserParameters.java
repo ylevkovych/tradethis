@@ -20,11 +20,11 @@ public class UserParameters  implements Serializable {
     @Column(name="ID")
     private Long id;
     @ManyToOne
-    @Column(name="CURCOMPANYID")
-    private Company curCompanyId;
+    @Column(name="CURCOMPANY")
+    private Company curCompany;
     @ManyToOne
-    @Column(name="CURWAREHOUSEID")
-    private Warehouse curWarehouseId;
+    @Column(name="CURWAREHOUSE")
+    private Warehouse curWarehouse;
 
     public Long getId() {
         return id;
@@ -34,19 +34,19 @@ public class UserParameters  implements Serializable {
         this.id = id;
     }
 
-    public Company getCurCompanyId() {
-        return curCompanyId;
+    public Company getCurCompany() {
+        return curCompany;
     }
 
-    public void setCurCompanyId(Company curCompanyId) {
-        this.curCompanyId = curCompanyId;
+    public void setCurCompanyId(Company curCompany) {
+        this.curCompany = curCompany;
     }
 
-    public Warehouse getCurWarehouseId() {
-        return curWarehouseId;
+    public Warehouse getCurWarehouse() {
+        return curWarehouse;
     }
 
-    public void setCurWarehouseId(Warehouse curWarehouse) {
-        this.curWarehouseId = curWarehouse;
+    public void setCurWarehouse(Warehouse curWarehouse) {
+        this.curWarehouse = curWarehouse;
     }
 }
